@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JS | Day 03 | Basic Exercises</title>
+</head>
+<body>
+	<!--
+	For each exercise provide appropriate user input
+Each exercise can be solved in various ways, so please provide your own unique solutions
+
+Basic Exercise 1 | Temperature
+Create a program that according to the temperature will provide you with an info, whether the weather is cold or moderate. The program should generate every time different random number, that should be between -5 and 25. If the temperature is between -5 and 10 print "The weather is cold" otherwise print "The weather is moderate".
+-->
+
+<p>What is weather like today?</p>
+
+<button onclick="myFunction()">Find out</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+    var randNum = Math.floor((Math.random() * 25) + -5);
+    console.log(randNum);
+
+	if (randNum > -4, randNum < 11) {
+		document.getElementById("demo").innerHTML = "The weather is cold.";
+	    } 
+	    else {
+		document.getElementById("demo").innerHTML = "The weather is moderate.";
+	    }
+
+ }
+</script>
+
+</body>
+</html>
+
